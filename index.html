@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ALONE SUN | Agency Content & Partner Network</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#F8FAFC;
+  color:#0B1220;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  background:#FFFFFF;
+  border-bottom:1px solid #E5E7EB;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* ================= LOGO ================= */
+
+.logo-area{
+  height:200px;
+  padding:5px 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#FFFFFF;
+  overflow:hidden;
+}
+
+.logo{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.logo-img{
+  width:320px;
+  height:190px;
+  object-fit:contain;
+  display:block;
+  transform:scale(1.25);
+}
+
+/* ================= NAVIGATION ================= */
+
+nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  padding:14px 10px;
+  background:#0B1220;
+  overflow-x:auto;
+}
+
+nav a{
+  color:#FFFFFF;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+nav a:hover{
+  color:#F5B942;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:44px;
+  line-height:1.15;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:#F5B942;
+}
+
+.hero p{
+  max-width:720px;
+  margin:auto;
+  color:#64748B;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.buttons{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 23px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
+  background:#2563EB;
+  color:#FFFFFF;
+}
+
+.secondary{
+  background:#0B1220;
+  color:#FFFFFF;
+}
+
+.whatsapp{
+  background:#16A34A;
+  color:#FFFFFF;
+}
+
+/* ================= GENERAL SECTIONS ================= */
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:31px;
+  margin-bottom:38px;
+}
+
+.section-intro{
+  max-width:720px;
+  margin:-15px auto 35px;
+  text-align:center;
+  color:#64748B;
+  line-height:1.7;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+}
+
+.card{
+  background:#FFFFFF;
+  padding:30px 24px;
+  border-radius:14px;
+  border:1px solid #E5E7EB;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}
+
+.card h3{
+  margin-bottom:12px;
+  font-size:20px;
+}
+
+.card p{
+  color:#64748B;
+  line-height:1.7;
+}
+
+.card ul{
+  padding-left:20px;
+  color:#64748B;
+  line-height:1.9;
+}
+
+/* ================= ABOUT ================= */
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  background:#FFFFFF;
+  padding:35px 30px;
+  border-radius:16px;
+  border:1px solid #E5E7EB;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}
+
+.about-box p{
+  color:#64748B;
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:20px;
+}
+
+.step{
+  background:#FFFFFF;
+  border:1px solid #E5E7EB;
+  border-radius:14px;
+  padding:28px 20px;
+  text-align:center;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}
+
+.step-number{
+  width:42px;
+  height:42px;
+  margin:0 auto 15px;
+  border-radius:50%;
+  background:#2563EB;
+  color:#FFFFFF;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.step h3{
+  margin-bottom:10px;
+}
+
+.step p{
+  color:#64748B;
+  line-height:1.6;
+}
+
+/* ================= WHY ALONE SUN ================= */
+
+.highlight{
+  border-top:4px solid #F5B942;
+}
+
+/* ================= USA AGENCIES ================= */
+
+.agency-box{
+  border-top:4px solid #2563EB;
+}
+
+/* ================= PARTNERS ================= */
+
+.partner-box{
+  border-top:4px solid #F5B942;
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+  max-width:850px;
+  margin:auto;
+}
+
+.faq-item{
+  background:#FFFFFF;
+  border:1px solid #E5E7EB;
+  border-radius:12px;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+
+.faq-item summary{
+  cursor:pointer;
+  padding:18px 20px;
+  font-weight:bold;
+  list-style:none;
+}
+
+.faq-item summary::-webkit-details-marker{
+  display:none;
+}
+
+.faq-item p{
+  padding:0 20px 20px;
+  color:#64748B;
+  line-height:1.7;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+  background:#0B1220;
+  color:#FFFFFF;
+  text-align:center;
+  padding:50px 25px;
+  border-radius:18px;
+}
+
+.cta h2{
+  font-size:31px;
+  margin-bottom:14px;
+}
+
+.cta p{
+  max-width:680px;
+  margin:auto;
+  color:#CBD5E1;
+  line-height:1.7;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  margin-top:50px;
+  padding:32px 20px;
+  background:#0B1220;
+  color:#94A3B8;
+  text-align:center;
+  font-size:14px;
+}
+
+.footer-logo{
+  color:#FFFFFF;
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.footer-logo span{
+  color:#F5B942;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+  .logo-area{
+    height:185px;
+    padding:0;
+  }
+
+  .logo-img{
+    width:300px;
+    height:180px;
+    transform:scale(1.28);
+  }
+
+  nav{
+    justify-content:flex-start;
+    gap:24px;
+  }
+
+  .hero{
+    padding:58px 18px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section{
+    padding:48px 18px;
+  }
+
+  .section-title{
+    font-size:27px;
+  }
+
+  .about-box{
+    padding:27px 20px;
+  }
+
+  .btn{
+    width:100%;
+    max-width:300px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+  <div class="logo-area">
+
+    <div class="logo">
+
+      <img
+        src="logo.png"
+        alt="ALONE SUN Logo"
+        class="logo-img"
+      >
+
+    </div>
+
+  </div>
+
+
+  <nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#agencies">
+      USA AGENCIES
+    </a>
+
+    <a href="#partners">
+      CONTENT PARTNERS
+    </a>
+
+    <a href="#contact">
+      CONTACT
+    </a>
+
+  </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+  <h1>
+    Agency Content
+    <span>& Partner Network</span>
+  </h1>
+
+  <p>
+    ALONE SUN connects agencies with reliable
+    content fulfillment partners for professional
+    SEO and digital content projects.
+  </p>
+
+
+  <div class="buttons">
+
+    <a
+      href="#agencies"
+      class="btn primary"
+    >
+      🇺🇸 USA AGENCY
+    </a>
+
+
+    <a
+      href="#partners"
+      class="btn secondary"
+    >
+      🤝 CONTENT PARTNER
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    About ALONE SUN
+  </h2>
+
+  <div class="about-box">
+
+    <p>
+      ALONE SUN is an agency-focused content
+      fulfillment and partner network designed
+      to connect digital agencies with reliable
+      content production support.
+    </p>
+
+    <p>
+      We focus on professional communication,
+      organized project coordination and
+      white-label content fulfillment.
+    </p>
+
+    <p>
+      Agencies can discuss their requirements
+      directly with ALONE SUN through WhatsApp.
+      Content partners can also contact us to
+      discuss partnership opportunities.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    What ALONE SUN Does
+  </h2>
+
+  <div class="cards">
+
+
+    <div class="card">
+
+      <h3>
+        SEO Content
+      </h3>
+
+      <p>
+        Professional blog and website
+        content fulfillment for digital
+        agencies.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        White-Label Support
+      </h3>
+
+      <p>
+        Behind-the-scenes content
+        fulfillment designed for agency
+        workflows.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Bulk Content
+      </h3>
+
+      <p>
+        Content fulfillment support for
+        agencies handling multiple blogs
+        and digital content requirements.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    How It Works
+  </h2>
+
+  <p class="section-intro">
+    A simple communication and fulfillment
+    process designed for agency projects.
+  </p>
+
+
+  <div class="steps">
+
+
+    <div class="step">
+
+      <div class="step-number">
+        1
+      </div>
+
+      <h3>
+        Agency Contact
+      </h3>
+
+      <p>
+        USA agencies contact ALONE SUN
+        through WhatsApp.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-number">
+        2
+      </div>
+
+      <h3>
+        Project Discussion
+      </h3>
+
+      <p>
+        Requirements, topics, word count
+        and deadlines are discussed.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-number">
+        3
+      </div>
+
+      <h3>
+        Fulfillment
+      </h3>
+
+      <p>
+        ALONE SUN coordinates the
+        content fulfillment process.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="step-number">
+        4
+      </div>
+
+      <h3>
+        Delivery
+      </h3>
+
+      <p>
+        Completed content is coordinated
+        for delivery according to the project.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY ALONE SUN ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Why Work With ALONE SUN?
+  </h2>
+
+
+  <div class="cards">
+
+
+    <div class="card highlight">
+
+      <h3>
+        Agency Focused
+      </h3>
+
+      <p>
+        Built around the workflow and
+        communication needs of digital
+        agencies.
+      </p>
+
+    </div>
+
+
+    <div class="card highlight">
+
+      <h3>
+        White-Label Approach
+      </h3>
+
+      <p>
+        Fulfillment can operate behind
+        the scenes of the agency relationship.
+      </p>
+
+    </div>
+
+
+    <div class="card highlight">
+
+      <h3>
+        Direct Communication
+      </h3>
+
+      <p>
+        Project requirements are discussed
+        directly with ALONE SUN through WhatsApp.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= USA AGENCIES ================= -->
+
+<section
+  class="section"
+  id="agencies"
+>
+
+  <h2 class="section-title">
+    For USA Agencies
+  </h2>
+
+
+  <div class="cards">
+
+
+    <div class="card agency-box">
+
+      <h3>
+        Need Content Fulfillment?
+      </h3>
+
+      <p>
+        Discuss your SEO content project
+        directly with ALONE SUN through
+        WhatsApp.
+      </p>
+
+
+      <br>
+
+
+      <a
+        class="btn whatsapp"
+        target="_blank"
+        href="https://wa.me/917988971185?text=Hello%20ALONE%20SUN%2C%20I%20want%20to%20discuss%20a%20content%20project.%20Please%20share%20the%20next%20steps."
+      >
+        💬 Request a Project
+      </a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Project Discussion
+      </h3>
+
+      <p>
+        You can discuss blog quantity,
+        word count, topics, SEO requirements,
+        deadlines and delivery requirements
+        directly on WhatsApp.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTENT PARTNERS ================= -->
+
+<section
+  class="section"
+  id="partners"
+>
+
+  <h2 class="section-title">
+    For Content Partners
+  </h2>
+
+
+  <div class="cards">
+
+
+    <div class="card partner-box">
+
+      <h3>
+        Join Our Network
+      </h3>
+
+      <p>
+        Content agencies and fulfillment
+        partners can contact ALONE SUN
+        to discuss partnership opportunities.
+      </p>
+
+
+      <br>
+
+
+      <a
+        class="btn whatsapp"
+        target="_blank"
+        href="https://wa.me/917988971185?text=Hello%20ALONE%20SUN%2C%20I%20want%20to%20become%20a%20Content%20Partner.%20Please%20share%20the%20requirements."
+      >
+        💬 Become a Partner
+      </a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        White-Label Work
+      </h3>
+
+      <p>
+        Partners work behind the scenes
+        while ALONE SUN manages the agency
+        relationship and project coordination.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= QUALITY ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Quality & Confidentiality
+  </h2>
+
+
+  <div class="cards">
+
+
+    <div class="card">
+
+      <h3>
+        Content Quality
+      </h3>
+
+      <p>
+        Projects are coordinated according
+        to the requirements and specifications
+        discussed with the agency.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Confidentiality
+      </h3>
+
+      <p>
+        Client and project information should
+        be handled professionally throughout
+        the fulfillment process.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Clear Requirements
+      </h3>
+
+      <p>
+        Word count, topics, deadlines and
+        project requirements are discussed
+        before fulfillment.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section">
+
+  <h2 class="section-title">
+    Frequently Asked Questions
+  </h2>
+
+
+  <div class="faq">
+
+
+    <details class="faq-item">
+
+      <summary>
+        How can a USA agency contact ALONE SUN?
+      </summary>
+
+      <p>
+        USA agencies can contact ALONE SUN
+        directly through the WhatsApp button
+        on this website.
+      </p>
+
+    </details>
+
+
+    <details class="faq-item">
+
+      <summary>
+        Can I discuss a project on WhatsApp?
+      </summary>
+
+      <p>
+        Yes. Project requirements such as
+        topics, quantity, word count, SEO
+        requirements and deadlines can be
+        discussed through WhatsApp.
+      </p>
+
+    </details>
+
+
+    <details class="faq-item">
+
+      <summary>
+        How can a content agency become a partner?
+      </summary>
+
+      <p>
+        Content agencies and fulfillment
+        partners can use the Become a Partner
+        button to contact ALONE SUN.
+      </p>
+
+    </details>
+
+
+    <details class="faq-item">
+
+      <summary>
+        Is ALONE SUN a direct client-to-writer platform?
+      </summary>
+
+      <p>
+        No. ALONE SUN coordinates the agency
+        relationship and fulfillment process.
+      </p>
+
+    </details>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+  class="section"
+  id="contact"
+>
+
+  <div class="cta">
+
+    <h2>
+      Let's Work Together
+    </h2>
+
+
+    <p>
+      Whether you are a USA agency looking
+      for content fulfillment or a content
+      partner looking for agency projects,
+      contact ALONE SUN on WhatsApp.
+    </p>
+
+
+    <div class="buttons">
+
+      <a
+        class="btn whatsapp"
+        target="_blank"
+        href="https://wa.me/917988971185?text=Hello%20ALONE%20SUN%2C%20I%20want%20to%20discuss%20working%20with%20you."
+      >
+        💬 Contact ALONE SUN
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="footer-logo">
+    ALONE <span>SUN</span>
+  </div>
+
+  <p>
+    Agency Content & Partner Network
+  </p>
+
+  <br>
+
+  <p>
+    © 2026 ALONE SUN. All rights reserved.
+  </p>
+
+</footer>
+
+
+</body>
+</html>
